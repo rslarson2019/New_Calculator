@@ -28,24 +28,31 @@ int main()
 
 	// Math and Formatting for addition operation
 	case '+':
-		cout << number1 << operation << number2 << " = " << number1 + number2 << endl;
+		cout << number1 << " " << operation << " " << number2 << " = " << number1 + number2 << endl;
 		break;
 
 	// Math and Formatting for subtraction operation
 	case '-':
-		cout << number1 << operation << number2 << " = " << number1 - number2 << endl;
+		cout << number1 << " " << operation << " " << number2 << " = " << number1 - number2 << endl;
 		break;
 
 	// Math and Formatting for multiplication operation
 	case '*':
-		cout << number1 << operation << number2 << " = " << number1 * number2 << endl;
+		cout << number1 << " " << operation << " " << number2 << " = " << number1 * number2 << endl;
 		break;
 
 	// Math and Formatting for division operation
 	case '/':
 
 		// If Statement for dividing a number by zero
-		if (number2 == 0.0)
+		if (number1 == 0.0)
+		{
+			// Prints response to zero division situation
+			cout << "Unable to divide numbers by zero" << endl;
+		}
+
+		// Else if Statement for dividing a number by zero
+		else if (number2 == 0.0)
 		{
 			// Prints response to zero division situation
 			cout << "Unable to divide numbers by zero" << endl;
@@ -54,7 +61,7 @@ int main()
 		// Prints division statements
 		else
 		{
-			cout << number1 << operation << number2 << " = " << number1 - number2 << endl;
+			cout << number1 << " " << operation << " " << number2 << " = " << number1 / number2 << endl;
 		}
 		break;
 
