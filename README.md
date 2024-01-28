@@ -1,6 +1,6 @@
 # Overview
 
-I created a basic 4 fuction calculator to demonstrate how switch case worrks in C++
+I created a basic 4 fuction calculator to demonstrate how switch case works in C++
 
 I wanted to learn how to code basic functions and how to format things in C++.
 
